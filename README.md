@@ -3,8 +3,8 @@
 This repository contains two production-ready web projects built as part of the TechQuarters AI challenge: the **Landing Page** and the **Dashboard Documentation**.
 
 ## Live Deployments
-* **Landing Page:** [https://tq-web-chatbot.vercel.app/landingpage/](https://tq-web-chatbot.vercel.app/landingpage/)
-* **Dashboard Documentation:** [https://tq-web-chatbot.vercel.app/dashboard/](https://tq-web-chatbot.vercel.app/dashboard/)
+* **Landing Page:** [https://tq-web-chatbot.vercel.app/landingpage/](https://tq-web-chatbot.vercel.app/landingpage/){:target="_blank"}
+* **Dashboard Documentation:** [https://tq-web-chatbot.vercel.app/dashboard/](https://tq-web-chatbot.vercel.app/dashboard/){:target="_blank"}
 
 ---
 
