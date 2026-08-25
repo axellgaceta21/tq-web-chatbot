@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechQuarters AI — Dashboard Documentation</title>
+  <meta name="description"
+    content="Production-ready AI lead qualification chatbot dashboard documentation. Captures visitor details, understands business needs, scores intent, and triggers real-time sales notifications.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Background Ambient Glowing Orbs -->
+  <div class="bg-orb orb-cyan"></div>
+  <div class="bg-orb orb-coral"></div>
+  <div class="bg-orb orb-purple"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="./images/logo.png" alt="TechQuarters AI Logo" class="nav-logo">
+        <span class="nav-title">TechQuarters AI Docs</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#hero">Overview</a>
+        <a href="#pipeline">Lead Pipeline</a>
+        <a href="#intelligence">Sales Intelligence</a>
+        <a href="#handovers">Projects & Settings</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="https://calendar.app.google/RQwQhaRL65RpPxYm9" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary-sm">Book Discovery Call</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section id="hero" class="hero-section">
+    <div class="container text-center">
+      <h1 class="hero-title">
+        <span class="gradient-cyan">AI Chatbot Dashboard</span> & <span class="gradient-coral">Strategy System</span>
+      </h1>
+
+      <p class="hero-subheadline">
+        A production-ready AI lead qualification chatbot that captures visitor details, understands business needs,
+        scores buying intent, and triggers real-time sales notifications.
+      </p>
+
+
+
+      <!-- Browser Mockup Window -->
+      <div class="hero-screenshot-wrapper">
+        <div class="browser-header">
+          <div class="browser-dots">
+            <span class="b-dot red"></span>
+            <span class="b-dot yellow"></span>
+            <span class="b-dot green"></span>
+          </div>
+          <div class="browser-address">dashboard.techquarters.ai/command-center</div>
+        </div>
+        <div class="aspect-ratio-16-9">
+          <img src="./images/command_center.png" alt="Command Center" class="clickable-image">
+        </div>
+      </div>
+
+      <!-- Relocated CTA Button directly below browser mockup container -->
+      <div class="hero-cta-below-wrapper">
+        <a href="#pipeline" class="btn btn-coral">View System Workflow</a>
+      </div>
+    </div>
+    <br>
+    <div class="tech-stack-row">
+      <span class="tech-badge"><span class="dot react"></span>React</span>
+      <span class="tech-badge"><span class="dot ts"></span>TypeScript</span>
+      <span class="tech-badge"><span class="dot supabase"></span>Supabase</span>
+      <span class="tech-badge"><span class="dot openai"></span>OpenAI</span>
+      <span class="tech-badge"><span class="dot tailwind"></span>Tailwind</span>
+    </div>
+
+  </section>
+
+  <!-- SECTION 2: LEAD PIPELINE & INTENT SCORING -->
+  <section id="pipeline" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">AUTOMATED QUALIFICATION</span>
+        <h2 class="section-title">
+          End-to-End <span class="gradient-cyan">AI Qualification Workflow</span>
+        </h2>
+        <p class="section-subtitle">
+          Real-time lead tracking from initial website chat interaction to AI-driven intent classification and automated
+          strategy call booking.
+        </p>
+      </div>
+
+      <!-- Main Pipeline Overview -->
+      <div class="pipeline-main-card">
+        <div class="card-header">
+          <h3>Lead Pipeline Management</h3>
+          <p>Centralized view of incoming qualified leads, conversation statuses, and direct actions.</p>
+        </div>
+        <div class="aspect-ratio-16-9">
+          <img src="./images/lead_pipeline.png" alt="Lead Pipeline" class="clickable-image">
+        </div>
+      </div>
+
+      <!-- Intent Scoring Grid (3 Column) -->
+      <div class="intent-grid">
+        <!-- High Intent Card -->
+        <div class="intent-card high-intent-border">
+          <div class="intent-card-header">
+            <div class="intent-badge badge-high">🔥 High Intent</div>
+            <h3>High Priority Conversion</h3>
+            <p>Leads with immediate buying intent, defined budget, and urgent timeline.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/high_intent.png" alt="High Intent Score" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Medium Intent Card -->
+        <div class="intent-card medium-intent-border">
+          <div class="intent-card-header">
+            <div class="intent-badge badge-medium">⚡ Medium Intent</div>
+            <h3>Nurture & Follow-Up</h3>
+            <p>Prospects evaluating options with moderate project timelines or flexible budgets.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/medium_intent.png" alt="Medium Intent Score" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Low Intent Card -->
+        <div class="intent-card low-intent-border">
+          <div class="intent-card-header">
+            <div class="intent-badge badge-low">💡 Low Intent</div>
+            <h3>General Inquiries</h3>
+            <p>Top-of-funnel visitors asking general questions or seeking educational info.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/low_intent.png" alt="Low Intent Score" class="clickable-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: DEEP DIVE: LEAD PROFILES & CHAT -->
+  <section id="intelligence" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">DEEP DIVE ANALYTICS</span>
+        <h2 class="section-title">
+          Actionable <span class="gradient-coral">Sales Intelligence</span>
+        </h2>
+        <p class="section-subtitle">
+          Comprehensive lead profiles, complete transcript audit trails, and structured project specs generated
+          instantly by the AI assistant.
+        </p>
+      </div>
+
+      <div class="features-vertical-list">
+        <!-- Feature 1: Lead Profile Setup -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <span class="feature-num">01</span>
+            <h3>Lead Profile & Qualification Summary</h3>
+            <p>Instant access to contact details, company information, estimated budget, decision-maker status, and
+              custom AI summary tags.</p>
+            <ul class="feature-checklist">
+              <li>Full contact details & company profile</li>
+              <li>AI-generated intent score & reasoning</li>
+              <li>Direct strategy call booking status</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <div class="aspect-ratio-16-9">
+              <img src="./images/lead_profile.png" alt="Lead Profile Setup" class="clickable-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Chat Transcript -->
+        <div class="feature-row reverse">
+          <div class="feature-text">
+            <span class="feature-num">02</span>
+            <h3>Full Conversation Transcript</h3>
+            <p>Review the exact dialogue between the visitor and the AI assistant, detailing pain points, user queries,
+              and AI responses in sequence.</p>
+            <ul class="feature-checklist">
+              <li>Time-stamped chat messages</li>
+              <li>User intent markers & sentiment analysis</li>
+              <li>Searchable chat history & exported logs</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <div class="aspect-ratio-16-9">
+              <img src="./images/lead_chat.png" alt="Chat Transcript" class="clickable-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Lead Project Setup -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <span class="feature-num">03</span>
+            <h3>Project Scope & Technical Requirements</h3>
+            <p>Automatically structured project scope extracted from conversational dialogue to streamline discovery
+              call preparation.</p>
+            <ul class="feature-checklist">
+              <li>Scope of work & deliverables draft</li>
+              <li>Technical stack & integration preferences</li>
+              <li>Estimated deployment timeline</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <div class="aspect-ratio-16-9">
+              <img src="./images/lead_project.png" alt="Lead Project Setup" class="clickable-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PROJECT HANDOVERS & SETTINGS -->
+  <section id="handovers" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">MANAGEMENT & CONFIGURATION</span>
+        <h2 class="section-title">
+          Seamless <span class="gradient-cyan">Project Handovers</span>
+        </h2>
+        <p class="section-subtitle">
+          Manage active client projects with an integrated Kanban hub, project status tracking, and workspace security
+          configurations.
+        </p>
+      </div>
+
+      <div class="handovers-grid">
+        <!-- Projects Hub Kanban -->
+        <div class="handover-card">
+          <div class="card-header">
+            <span class="card-tag">KANBAN BOARD</span>
+            <h3>Projects Hub</h3>
+            <p>Visual pipeline for active handovers, discovery calls, proposals, and ongoing builds.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/projects_hub.png" alt="Projects Hub Kanban" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Projects Overview -->
+        <div class="handover-card">
+          <div class="card-header">
+            <span class="card-tag">ANALYTICS</span>
+            <h3>Projects Overview</h3>
+            <p>Comprehensive overview of active client accounts, project health, and milestone metrics.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/projects_overview.png" alt="Projects Overview" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Workspace Settings -->
+        <div class="handover-card full-width-card">
+          <div class="card-header">
+            <span class="card-tag">SETTINGS</span>
+            <h3>Workspace & Security Configuration</h3>
+            <p>Configure AI bot prompts, custom domain webhooks, Supabase database connections, and API keys.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="./images/settings.png" alt="Workspace Settings" class="clickable-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FOOTER & LINKS (EXACT LAYOUT REQUIRED) -->
+  <footer class="footer-section">
+    <div class="footer-radial-glow"></div>
+    <div class="container footer-content text-center">
+
+      <!-- Logo -->
+      <div class="footer-logo-wrapper">
+        <img src="./images/logo.png" alt="Logo" class="footer-logo">
+      </div>
+
+      <!-- Headline -->
+      <h2 class="footer-headline">
+        Made by <span class="gradient-coral">Axell Gaceta</span>
+      </h2>
+
+      <!-- Subtitles -->
+      <p class="footer-subtitle">
+        Web Developer • AI Automation Builder
+      </p>
+
+      <!-- Action Links -->
+      <div class="footer-links-row">
+        <a href="https://axell-builds.lovable.app/" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          💼 Portfolio
+        </a>
+        <a href="https://calendar.app.google/RQwQhaRL65RpPxYm9" target="_blank" rel="noopener noreferrer"
+          class="footer-pill-btn">
+          📅 Book a Discovery Call
+        </a>
+        <a href="https://github.com/axellgaceta21/" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          💻 GitHub
+        </a>
+        <a href="mailto:gacetaaxell@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          ✉️ Email
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copyright">
+        © 2026 Axell Gaceta • Engineered with React, Supabase, Tailwind CSS, Vercel, and AI APIs
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Image Modal / Lightbox -->
+  <div id="image-modal" class="modal-hidden">
+    <span id="modal-close">&times;</span>
+    <img id="modal-image" src="" alt="Expanded View">
+  </div>
+
+  <!-- Lightbox Modal Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-image');
+      const closeBtn = document.getElementById('modal-close');
+      const clickableImages = document.querySelectorAll('.clickable-image');
+
+      clickableImages.forEach(img => {
+        img.addEventListener('click', function () {
+          modalImg.src = this.src;
+          modalImg.alt = this.alt || 'Expanded View';
+          modal.classList.remove('modal-hidden');
+        });
+      });
+
+      function closeModal() {
+        modal.classList.add('modal-hidden');
+        modalImg.src = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal || e.target === closeBtn) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modal.classList.contains('modal-hidden')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
