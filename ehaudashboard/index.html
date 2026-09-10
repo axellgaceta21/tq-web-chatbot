@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Health AU — AI Chatbot Dashboard & Triage System</title>
+  <meta name="description" content="Autonomous medical AI platform dashboard documentation for Elite Health AU. Handles patient inquiries, manages knowledge bases, tracks analytics, and escalates urgent cases.">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/ehaudashboard/images/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/ehaudashboard/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glowing Orbs -->
+  <div class="bg-orb orb-cyan"></div>
+  <div class="bg-orb orb-coral"></div>
+  <div class="bg-orb orb-purple"></div>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <img src="/ehaudashboard/images/logo.png" alt="Elite Health AU Logo" class="nav-logo">
+        <span class="nav-title">Elite Health AU Docs</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#hero">Overview</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#knowledge">AI Knowledge</a>
+        <a href="#triage">Patient Triage</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="https://axell-builds.lovable.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary-sm">View Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section id="hero" class="hero-section">
+    <div class="container text-center">
+      <h1 class="hero-title">
+        Elite Health AU: <span class="gradient-cyan">AI Chatbot Dashboard</span> & <span class="gradient-coral">Triage System</span>
+      </h1>
+      
+      <p class="hero-subheadline">
+        An autonomous medical AI platform that handles patient inquiries, manages complex knowledge bases, tracks operational analytics, and seamlessly escalates urgent cases to human triage staff.
+      </p>
+
+      <div class="tech-stack-row">
+        <span class="tech-badge"><span class="dot react"></span>React</span>
+        <span class="tech-badge"><span class="dot ts"></span>TypeScript</span>
+        <span class="tech-badge"><span class="dot supabase"></span>Supabase</span>
+        <span class="tech-badge"><span class="dot openai"></span>OpenAI</span>
+        <span class="tech-badge"><span class="dot tailwind"></span>Tailwind</span>
+      </div>
+
+      <!-- Hero Browser Mockup Window -->
+      <div class="hero-screenshot-wrapper">
+        <div class="browser-header">
+          <div class="browser-dots">
+            <span class="b-dot red"></span>
+            <span class="b-dot yellow"></span>
+            <span class="b-dot green"></span>
+          </div>
+          <div class="browser-address">dashboard.elitehealth.au/command-center</div>
+        </div>
+        <div class="aspect-ratio-16-9">
+          <img src="/ehaudashboard/images/dashboard_1.png" alt="EHAU Command Center" class="clickable-image">
+        </div>
+      </div>
+
+      <div class="hero-cta-below-wrapper">
+        <a href="#analytics" class="btn btn-coral">Explore System Features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: REAL-TIME ANALYTICS -->
+  <section id="analytics" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">HEALTHCARE METRICS</span>
+        <h2 class="section-title">
+          Real-Time <span class="gradient-cyan">Healthcare Analytics</span>
+        </h2>
+        <p class="section-subtitle">
+          Comprehensive data visualization tracking patient volume, triage response speeds, inquiry classification, and operational efficiency.
+        </p>
+      </div>
+
+      <!-- Main Overview Card -->
+      <div class="overview-main-card">
+        <div class="card-header">
+          <span class="card-tag">SYSTEM OVERVIEW</span>
+          <h3>Operational Health & Analytics Dashboard</h3>
+          <p>Real-time telemetry monitoring active AI response sessions, patient intake channels, and staff intervention thresholds.</p>
+        </div>
+        <div class="aspect-ratio-16-9">
+          <img src="/ehaudashboard/images/dashboard_2.png" alt="Operational Health Overview" class="clickable-image">
+        </div>
+      </div>
+
+      <!-- 3-Column Analytics Grid -->
+      <div class="analytics-grid">
+        <!-- Analytics Card 1 -->
+        <div class="analytics-card">
+          <div class="card-header">
+            <span class="card-tag">PATIENT VOLUME</span>
+            <h3>Intake Telemetry</h3>
+            <p>Monitors hourly conversation peaks, patient demographics, and bot resolution rates.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/analytics_1.png" alt="Patient Volume & Triage Metrics" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Analytics Card 2 -->
+        <div class="analytics-card">
+          <div class="card-header">
+            <span class="card-tag">RESPONSE SPEEDS</span>
+            <h3>Triage Velocity</h3>
+            <p>Measures AI query processing speeds and human staff escalation response times.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/analytics_2.png" alt="Operational Health & Response Speed" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Analytics Card 3 -->
+        <div class="analytics-card">
+          <div class="card-header">
+            <span class="card-tag">CONVERSION METRICS</span>
+            <h3>Booking Outcomes</h3>
+            <p>Tracks patient appointments scheduled, follow-up reminders, and completion status.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/analytics_3.png" alt="Conversion & Engagement Breakdown" class="clickable-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: AI BRAIN & KNOWLEDGE MANAGEMENT -->
+  <section id="knowledge" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">MEDICAL REASONING ENGINE</span>
+        <h2 class="section-title">
+          Intelligent <span class="gradient-coral">Medical Knowledge Base</span>
+        </h2>
+        <p class="section-subtitle">
+          Centralized controls for configuring AI logic, managing response grounding, and updating standard operating procedures.
+        </p>
+      </div>
+
+      <div class="features-vertical-list">
+        <!-- Knowledge Feature 1 -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <span class="feature-num">01</span>
+            <h3>AI Configuration & Safety Guardrails</h3>
+            <p>Configure custom prompt guidelines, medical disclosure rules, clinical tone of voice, and automated intent classification prompts.</p>
+            <ul class="feature-checklist">
+              <li>Custom medical AI system prompt definitions</li>
+              <li>Strict safety guardrails & emergency disclosures</li>
+              <li>Dynamic model temperature & grounding controls</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <div class="aspect-ratio-16-9">
+              <img src="/ehaudashboard/images/brain_manager_AI_configuration.png" alt="AI Configuration & Logic Controls" class="clickable-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Knowledge Feature 2 -->
+        <div class="feature-row reverse">
+          <div class="feature-text">
+            <span class="feature-num">02</span>
+            <h3>SOP & Knowledge Ingestion Engine</h3>
+            <p>Upload clinic guidelines, medical FAQs, pricing tables, and service protocols into vector embeddings for accurate response grounding.</p>
+            <ul class="feature-checklist">
+              <li>Instant vector search indexing of clinic SOPs</li>
+              <li>Real-time document status & grounding audit</li>
+              <li>Automated citation linking for AI answers</li>
+            </ul>
+          </div>
+          <div class="feature-media">
+            <div class="aspect-ratio-16-9">
+              <img src="/ehaudashboard/images/brain_manager_knowledge.png" alt="Knowledge Management & Grounding" class="clickable-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PATIENT ENGAGEMENT & TRIAGE -->
+  <section id="triage" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">HUMAN-IN-THE-LOOP</span>
+        <h2 class="section-title">
+          Patient Conversations & <span class="gradient-cyan">Urgent Escalations</span>
+        </h2>
+        <p class="section-subtitle">
+          A comprehensive UI for monitoring active patient chats, capturing triage leads, and executing critical human handoffs.
+        </p>
+      </div>
+
+      <div class="triage-grid">
+        <!-- Triage Item 1: Active Conversations -->
+        <div class="triage-card">
+          <div class="card-header">
+            <span class="card-tag">PATIENT CHAT TRANSCRIPTS</span>
+            <h3>Active Conversation Audit</h3>
+            <p>Inspect live patient dialogues, AI intent scoring, and sentiment markers in real time.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/conversation.png" alt="Patient Conversation Transcript" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Triage Item 2: Lead Management -->
+        <div class="triage-card">
+          <div class="card-header">
+            <span class="card-tag">TRIAGE CAPTURE</span>
+            <h3>Patient Intake & Qualification</h3>
+            <p>Structured patient records detailing medical history summaries, urgency scores, and contact info.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/lead_management.png" alt="Triage Lead Management" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Triage Item 3: Urgent Escalations -->
+        <div class="triage-card">
+          <div class="card-header">
+            <span class="card-tag">EMERGENCY HANDOFF</span>
+            <h3>Urgent Escalation Queue</h3>
+            <p>Immediate alerts for high-urgency symptoms triggering direct SMS/email notification to clinical staff.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/escalations.png" alt="Urgent Escalation Center" class="clickable-image">
+          </div>
+        </div>
+
+        <!-- Triage Item 4: Chatbot Launcher -->
+        <div class="triage-card">
+          <div class="card-header">
+            <span class="card-tag">WIDGET CONFIGURATION</span>
+            <h3>Patient Widget & Launcher</h3>
+            <p>Customizable web floating launcher, branding theme, and embed snippet for healthcare sites.</p>
+          </div>
+          <div class="aspect-ratio-16-9">
+            <img src="/ehaudashboard/images/chatbot_button.png" alt="Patient Chatbot Widget Setup" class="clickable-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FOOTER (EXACT LAYOUT REQUIRED) -->
+  <footer class="footer-section">
+    <div class="footer-radial-glow"></div>
+    <div class="container footer-content text-center">
+      
+      <!-- Logo -->
+      <div class="footer-logo-wrapper">
+        <img src="/ehaudashboard/images/logo.png" alt="Logo" class="footer-logo">
+      </div>
+
+      <!-- Headline -->
+      <h2 class="footer-headline">
+        Made by <span class="gradient-coral">Axell Gaceta</span>
+      </h2>
+
+      <!-- Subtitles -->
+      <p class="footer-subtitle">
+        Web Developer • AI Automation Builder
+      </p>
+
+      <!-- Action Links -->
+      <div class="footer-links-row">
+        <a href="https://axell-builds.lovable.app/" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          💼 Portfolio
+        </a>
+        <a href="https://calendar.app.google/RQwQhaRL65RpPxYm9" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          📅 Book a Discovery Call
+        </a>
+        <a href="https://github.com/axellgaceta21/" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          💻 GitHub
+        </a>
+        <a href="mailto:gacetaaxell@gmail.com" target="_blank" rel="noopener noreferrer" class="footer-pill-btn">
+          ✉️ Email
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <p class="footer-copyright">
+        © 2026 Axell Gaceta • Engineered with React, Supabase, Tailwind CSS, Vercel, and AI APIs
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Image Modal -->
+  <div id="image-modal" class="modal-hidden">
+    <span id="modal-close">&times;</span>
+    <img id="modal-image" src="" alt="Expanded View">
+  </div>
+
+  <!-- Lightbox Modal Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-image');
+      const closeBtn = document.getElementById('modal-close');
+      const clickableImages = document.querySelectorAll('.clickable-image');
+
+      clickableImages.forEach(img => {
+        img.addEventListener('click', function () {
+          modalImg.src = this.src;
+          modalImg.alt = this.alt || 'Expanded View';
+          modal.classList.remove('modal-hidden');
+        });
+      });
+
+      function closeModal() {
+        modal.classList.add('modal-hidden');
+        modalImg.src = '';
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal || e.target === closeBtn) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && !modal.classList.contains('modal-hidden')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
