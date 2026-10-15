@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="TechQuarters AI — AI Funnel Qualification and Discovery Call System case study."
+    content="AI chatbot lead qualification, n8n event routing, and Telegram notification outputs. A project by Axell Gaceta."
   />
-  <title>TechQuarters AI | AI Chatbot Funnel & Strategy Call System</title>
+  <title>AI Chatbot + n8n Automation | Axell Gaceta</title>
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,7 +20,7 @@
   <header class="navbar" id="top">
     <a href="#top" class="brand" aria-label="Axell Gaceta home">
       <span class="brand-logo-wrap">
-        <img src="images/logo.png" alt="Axell Gaceta logo" class="brand-logo" />
+        <img src="images/logo.png" alt="Axell Gaceta logo" class="brand-logo" width="29" height="29" />
       </span>
 
       <span class="brand-copy">
@@ -32,9 +32,8 @@
     <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
       <a href="#overview">Overview</a>
       <a href="#workflow">Workflow</a>
-      <a href="#features">Features</a>
       <a href="#stack">Tech Stack</a>
-      <a href="#architecture">Architecture</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <a
@@ -46,7 +45,7 @@
       See More Projects <span>↗</span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
       <span></span>
       <span></span>
       <span></span>
@@ -54,327 +53,256 @@
   </header>
 
   <main>
-    <!-- HERO -->
-    <section class="hero" id="overview">
-      <div class="hero-grid"></div>
-      <div class="hero-orb orb-one"></div>
-      <div class="hero-orb orb-two"></div>
-      <div class="hero-orb orb-three"></div>
-
+    <!-- HERO: actual project evidence -->
+    <section class="hero" id="overview" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+      <div class="hero-orb orb-three" aria-hidden="true"></div>
       <div class="particles" aria-hidden="true">
         <span></span><span></span><span></span><span></span><span></span>
         <span></span><span></span><span></span><span></span><span></span>
       </div>
-
       <div class="container hero-content">
         <div class="hero-copy reveal">
-          <div class="eyebrow">
-            <span class="live-dot"></span>
-            TechQuarters AI • Production-Ready AI Automation System
+          <div class="eyebrow">AI CHATBOT &bull; N8N AUTOMATION &bull; LEAD QUALIFICATION</div>
+          <h1 id="hero-title">AI Lead <span class="text-cyan">Qualification</span><br /><span class="text-cyan">Chatbot</span> + <span class="text-coral">n8n Automation.</span></h1>
+          <p class="hero-description">An AI-powered chatbot that qualifies website visitors, captures business information, and triggers automated sales notifications through n8n, Supabase, and Telegram.</p>
+          <div class="tech-pills" aria-label="Primary technologies">
+            <span>n8n</span><span>AI Chatbot</span><span>Supabase</span><span>Telegram</span>
           </div>
-
-          <h1>
-            AI Chatbot <span class="text-cyan">Funnel</span> &amp;
-            <span class="text-coral">Strategy Call</span> System
-          </h1>
-
-          <p class="hero-description">
-            A production-ready AI lead qualification chatbot that captures visitor details,
-            understands business needs, scores buying intent, summarizes conversations, and
-            triggers real-time sales notifications through Supabase, n8n, Telegram, and Calendly.
-          </p>
-
           <div class="hero-actions">
-            <a href="#workflow" class="button button-primary">
-              View System Workflow <span>↓</span>
-            </a>
-
-            <a
-              href="https://axell-builds.lovable.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="button button-outline"
-            >
-              See More Projects <span>↗</span>
-            </a>
-          </div>
-
-          <div class="tech-pills">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Supabase</span>
-            <span>OpenAI</span>
-            <span>Groq</span>
-            <span>Express.js</span>
-            <span>n8n</span>
-            <span>Telegram</span>
-            <span>Calendly</span>
+            <a href="#workflow" class="button button-primary">Explore Workflow <span aria-hidden="true">&darr;</span></a>
+            <a href="#chatbot-experience" class="button button-outline">View Chatbot Experience <span aria-hidden="true">&#8599;</span></a>
           </div>
         </div>
-
-        <div class="hero-visual reveal delay-1">
-          <div class="hero-main-glow"></div>
-
-          <!-- Main n8n workflow image -->
-          <button
-            class="hero-main-image image-trigger"
-            data-image="images/1.png"
-            data-title="Main n8n Automation Workflow"
-            aria-label="Open main n8n workflow screenshot"
-          >
-            <span class="hero-image-label">MAIN N8N AUTOMATION FLOW</span>
-            <span class="expand-icon">⤢</span>
-
-            <img
-              src="images/1.png"
-              alt="Main TechQuarters AI n8n workflow"
-              onerror="this.classList.add('is-missing')"
-            />
-
-            <span class="image-fallback">
-              Upload <strong>images/1.png</strong><br />
-              Main n8n workflow screenshot
-            </span>
-          </button>
-
-          <div class="floating-card floating-supabase">
-            <span class="mini-icon cyan">◆</span>
-            <div>
-              <strong>Supabase</strong>
-              <small>Lead profile saved</small>
+        <div class="hero-workflow reveal delay-1">
+          <div class="hero-main-glow" aria-hidden="true"></div>
+          <div class="hero-panel workflow-panel">
+            <div class="panel-heading">
+              <span class="panel-kicker">01 / N8N AUTOMATION WORKFLOW</span>
+              <span class="panel-tool">Webhook &bull; Event Routing &bull; Supabase &bull; Telegram</span>
             </div>
-            <span class="status-dot"></span>
+            <button type="button" class="evidence-shot image-trigger workflow-shot" data-image="images/n8n_workflow_ss.png" data-title="n8n Webhook &amp; Event Routing" aria-label="Enlarge n8n Webhook &amp; Event Routing">
+              <img src="images/n8n_workflow_ss.png" alt="n8n webhook and Switch node routing three event branches through Supabase to Telegram" width="1913" height="1021" fetchpriority="high" decoding="async" />
+              <span class="shot-caption"><span>Three events. One automated workflow.</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button>
           </div>
-
-          <div class="floating-card floating-webhook">
-            <span class="mini-icon purple">⚡</span>
-            <div>
-              <strong>n8n Webhook</strong>
-              <small>Event received</small>
-            </div>
+        </div>
+        <div class="chatbot-showcase" id="chatbot-experience" role="region" aria-labelledby="chatbot-title" tabindex="-1">
+          <div class="chatbot-intro reveal">
+            <div class="section-kicker">02 / AI CHATBOT EXPERIENCE</div>
+            <h2 id="chatbot-title">AI Lead <span class="text-cyan">Qualification Scenarios</span></h2>
+            <p>Explore how the AI chatbot handles different conversations, identifies buying intent, and recommends the appropriate next step.</p>
+            <p class="chatbot-demo-note">Illustrative conversations demonstrating different qualification outcomes.</p>
           </div>
-
-          <div class="floating-card floating-telegram">
-            <span class="mini-icon blue">✈</span>
-            <div>
-              <strong>Telegram</strong>
-              <small>Sales alert sent</small>
-            </div>
-          </div>
-
-          <div class="score-chip">
-            <span>AI SCORE</span>
-            <strong>92<span>/100</span></strong>
-          </div>
-
-          <!-- Chatbot Mockup -->
-          <div class="chatbot-mockup">
-            <div class="chat-topbar">
-              <div class="bot-avatar">
-                <img src="images/tqlogo.png" alt="" />
-              </div>
-
-              <div>
-                <strong>TechQuarters AI</strong>
-                <small><span class="online-dot"></span>Online</small>
-              </div>
-
-              <button type="button" aria-label="More chatbot options">•••</button>
-            </div>
-
-            <div class="chat-window">
-              <div class="chat-time">Today, 10:42 AM</div>
-
-              <div class="chat-message bot-message">
-                <span class="message-label">AI CONSULTANT</span>
-                Hi! I can help identify the best AI system for your business.
-                What are you currently looking to improve?
-              </div>
-
-              <div class="chat-message user-message">
-                We get leads but our team spends too much time qualifying them manually.
-              </div>
-
-              <div class="chat-message bot-message">
-                That is exactly where an AI qualification workflow can help.
-                How many leads does your team receive each month?
-              </div>
-
-              <div class="qualification-card">
-                <div>
-                  <span class="qualified-pill">● Qualified Lead</span>
-                  <strong>High buying intent detected</strong>
-                  <small>Recommended next step: strategy call</small>
+          <div class="chatbot-stage chatbot-carousel reveal" role="region" aria-roledescription="carousel" aria-label="Lead qualification scenarios">
+            <div class="chatbot-stage-glow" aria-hidden="true"></div>
+            <p class="carousel-hint" id="carousel-help">Swipe or use the arrows to explore. Scroll inside each conversation to read more.</p>
+            <div class="carousel-track" id="qualification-track" tabindex="0" aria-label="Qualification scenarios; use Left and Right arrow keys, Home, or End" aria-describedby="carousel-help">
+              <article class="scenario-card intent-high is-active" id="scenario-high" data-intent-label="High Intent" role="group" aria-roledescription="slide" aria-label="1 of 3: High Intent">
+                <h3 class="scenario-heading"><span class="intent-dot" aria-hidden="true"></span>High Intent<span class="scenario-number">01 / 03</span></h3>
+                <div class="chatbot-mockup">
+                  <div class="chat-topbar">
+                    <div class="bot-avatar"><img src="images/tq_logo.png" width="22" height="22" loading="lazy" alt="" /></div>
+                    <div><strong>TechQuarters AI</strong><small><span class="online-dot" aria-hidden="true"></span>Online (Demo)</small></div>
+                    <button type="button" disabled aria-label="Chatbot options unavailable in this demo">&bull;&bull;&bull;</button>
+                  </div>
+                  <div class="chat-window" tabindex="0" role="region" aria-label="High Intent illustrative conversation. Scroll to read all messages.">
+                    <div class="chat-time">Illustrative conversation &bull; Scroll to explore</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Hi! I can help you find the right AI automation solution. What does your business do?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>I run NovaCommerce, an e-commerce company. We sell products through Shopify and generate around 150 leads per month.</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Thanks! What's the biggest challenge with your current lead management process?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>Our sales team manually qualifies leads from Facebook Ads and our website. Follow-ups are often delayed, and we're losing potential customers.</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>What tools are you currently using, and what would you like to automate?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>We use Shopify and HubSpot. We want AI lead scoring, automated follow-ups, and automatic CRM updates.</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>That sounds like a good fit for an AI-powered lead qualification system. When are you planning to implement this, and do you have a budget range?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>We'd like to start within 30 days, with a budget of around $1,000–$2,000 per month.</div>
+                    <div class="chat-message bot-message chatbot-closing-message"><span class="message-label">AI CONSULTANT</span><p>Based on your requirements, an AI chatbot connected to HubSpot could help automate lead qualification, scoring, and follow-ups.</p><p>Since you're planning to start within 30 days, I recommend booking a strategy call to discuss the best solution for your business.</p>
+                      <button type="button" class="chat-cta chatbot-action-trigger chat-message-action" data-chatbot-action="booking" aria-haspopup="dialog" aria-controls="chatbotActionModal"><span class="chatbot-action-emoji" aria-hidden="true">&#128197;</span>Book a Strategy Call<span aria-hidden="true">&#8599;</span></button>
+                    </div>
+                  </div>
+                  <div class="chat-input">
+                    <input type="text" value="Illustrative demo only" disabled aria-label="Demo chat input; not connected to an AI service" />
+                    <button type="button" disabled aria-label="Sending is unavailable in this demo">&uarr;</button>
+                  </div>
                 </div>
-                <span class="sparkle">✦</span>
+                  <div class="qualification-card scenario-result glass-card">
+                    <div class="result-body">
+                      <span class="qualification-result-label">AI QUALIFICATION RESULT</span>
+                      <span class="qualified-pill">HIGH INTENT</span>
+                      <strong>QUALIFIED LEAD</strong>
+                      <dl class="qualification-fields" tabindex="0" aria-label="High Intent example qualification details">
+                        <dt>Company</dt><dd>NovaCommerce</dd>
+                        <dt>Industry</dt><dd>E-commerce</dd>
+                        <dt>Lead Volume</dt><dd>150/month</dd>
+                        <dt>CRM</dt><dd>HubSpot</dd>
+                        <dt>Platform</dt><dd>Shopify</dd>
+                        <dt>Main Problem</dt><dd>Manual lead qualification and delayed follow-ups</dd>
+                        <dt>Solution</dt><dd>AI scoring, automated follow-ups, CRM updates</dd>
+                        <dt>Timeline</dt><dd>Within 30 days</dd>
+                        <dt>Budget</dt><dd>$1,000–$2,000/month</dd>
+                      </dl>
+                    </div>
+                  </div>
+              </article>
+              <article class="scenario-card intent-medium" id="scenario-medium" data-intent-label="Medium Intent" role="group" aria-roledescription="slide" aria-label="2 of 3: Medium Intent">
+                <h3 class="scenario-heading"><span class="intent-dot" aria-hidden="true"></span>Medium Intent<span class="scenario-number">02 / 03</span></h3>
+                <div class="chatbot-mockup">
+                  <div class="chat-topbar">
+                    <div class="bot-avatar"><img src="images/tq_logo.png" width="22" height="22" loading="lazy" alt="" /></div>
+                    <div><strong>TechQuarters AI</strong><small><span class="online-dot" aria-hidden="true"></span>Online (Demo)</small></div>
+                    <button type="button" disabled aria-label="Chatbot options unavailable in this demo">&bull;&bull;&bull;</button>
+                  </div>
+                  <div class="chat-window" tabindex="0" role="region" aria-label="Medium Intent illustrative conversation. Scroll to read all messages.">
+                    <div class="chat-time">Illustrative conversation &bull; Scroll to explore</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Hi! I can help identify the best AI system for your business. What are you currently looking to improve?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>We get leads, but our team spends too much time qualifying them manually.</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>That's exactly where an AI qualification workflow can help. How many leads does your team receive each month?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>Probably around 50 to 100 leads, depending on the month.</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Understood. Are you currently using a CRM or any tools to manage those leads?</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>We use spreadsheets and a few other tools, but we're still exploring automation options.</div>
+                    <div class="chat-message bot-message chatbot-closing-message"><span class="message-label">AI CONSULTANT</span><p>AI automation could help organize your leads and reduce manual qualification.</p><p>Since you're still exploring options, feel free to share more details through our contact form so we can better understand your requirements.</p>
+                      <button type="button" class="chat-cta chatbot-action-trigger chat-message-action" data-chatbot-action="contact" aria-haspopup="dialog" aria-controls="chatbotActionModal"><span class="chatbot-action-emoji" aria-hidden="true">&#9993;&#65039;</span>Contact Us<span aria-hidden="true">&#8599;</span></button>
+                    </div>
+                  </div>
+                  <div class="chat-input">
+                    <input type="text" value="Illustrative demo only" disabled aria-label="Demo chat input; not connected to an AI service" />
+                    <button type="button" disabled aria-label="Sending is unavailable in this demo">&uarr;</button>
+                  </div>
+                </div>
+                  <div class="qualification-card scenario-result glass-card">
+                    <div class="result-body">
+                      <span class="qualification-result-label">AI QUALIFICATION RESULT</span>
+                      <span class="qualified-pill">MEDIUM INTENT</span>
+                      <strong>NEEDS MORE INFORMATION</strong>
+                      <dl class="qualification-fields" tabindex="0" aria-label="Medium Intent example qualification details">
+                        <dt>Business Problem</dt><dd>Manual lead qualification</dd>
+                        <dt>Estimated Lead Volume</dt><dd>50–100/month</dd>
+                        <dt>Current Tools</dt><dd>Spreadsheets and unspecified tools</dd>
+                        <dt>Timeline</dt><dd>Not provided</dd>
+                        <dt>Budget</dt><dd>Not provided</dd>
+                        <dt>Qualification Status</dt><dd>More information needed</dd>
+                      </dl>
+                    </div>
+                  </div>
+              </article>
+              <article class="scenario-card intent-low" id="scenario-low" data-intent-label="Low Intent" role="group" aria-roledescription="slide" aria-label="3 of 3: Low Intent">
+                <h3 class="scenario-heading"><span class="intent-dot" aria-hidden="true"></span>Low Intent<span class="scenario-number">03 / 03</span></h3>
+                <div class="chatbot-mockup">
+                  <div class="chat-topbar">
+                    <div class="bot-avatar"><img src="images/tq_logo.png" width="22" height="22" loading="lazy" alt="" /></div>
+                    <div><strong>TechQuarters AI</strong><small><span class="online-dot" aria-hidden="true"></span>Online (Demo)</small></div>
+                    <button type="button" disabled aria-label="Chatbot options unavailable in this demo">&bull;&bull;&bull;</button>
+                  </div>
+                  <div class="chat-window" tabindex="0" role="region" aria-label="Low Intent illustrative conversation. Scroll to read all messages.">
+                    <div class="chat-time">Illustrative conversation &bull; Scroll to explore</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>Hi, what does TechQuarters AI do?</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>We build AI chatbots, workflow automations, and connected business systems that help companies reduce repetitive work.</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>Do you also build AI agents?</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Yes! We develop AI assistants and agents for tasks like lead qualification, customer support, reporting, and workflow automation.</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>Can these work with tools like Google Sheets or a CRM?</div>
+                    <div class="chat-message bot-message"><span class="message-label">AI CONSULTANT</span>Yes. Depending on your requirements, we can connect AI systems with tools such as Google Sheets, CRMs, and other business platforms through APIs and automation workflows.</div>
+                    <div class="chat-message user-message"><span class="message-label">VISITOR</span>That's interesting. I'm just exploring for now.</div>
+                    <div class="chat-message bot-message chatbot-closing-message"><span class="message-label">AI CONSULTANT</span><p>No problem! Feel free to explore our AI and automation services to see what might be useful for your business.</p><p>You can always reach out whenever you're ready to discuss a project.</p>
+                      <button type="button" class="chat-cta chatbot-action-trigger chat-message-action" data-chatbot-action="services" aria-haspopup="dialog" aria-controls="chatbotActionModal"><span class="chatbot-action-emoji" aria-hidden="true">&#129517;</span>Explore Services<span aria-hidden="true">&#8599;</span></button>
+                    </div>
+                  </div>
+                  <div class="chat-input">
+                    <input type="text" value="Illustrative demo only" disabled aria-label="Demo chat input; not connected to an AI service" />
+                    <button type="button" disabled aria-label="Sending is unavailable in this demo">&uarr;</button>
+                  </div>
+                </div>
+                  <div class="qualification-card scenario-result glass-card">
+                    <div class="result-body">
+                      <span class="qualification-result-label">AI QUALIFICATION RESULT</span>
+                      <span class="qualified-pill">LOW INTENT</span>
+                      <strong>GENERAL INQUIRY</strong>
+                      <dl class="qualification-fields" tabindex="0" aria-label="Low Intent example qualification details">
+                        <dt>Interest</dt><dd>AI services and integrations</dd>
+                        <dt>Business Problem</dt><dd>Not identified</dd>
+                        <dt>Company Information</dt><dd>Not provided</dd>
+                        <dt>Timeline</dt><dd>Not provided</dd>
+                        <dt>Budget</dt><dd>Not provided</dd>
+                        <dt>Qualification Status</dt><dd>General inquiry</dd>
+                      </dl>
+                    </div>
+                  </div>
+              </article>
+            </div>
+            <div class="carousel-navigation">
+              <button class="carousel-arrow" id="scenario-prev" type="button" aria-label="Previous qualification scenario" aria-controls="qualification-track" disabled><span aria-hidden="true">&larr;</span></button>
+              <div class="carousel-pagination" role="group" aria-label="Choose a qualification scenario">
+                <button type="button" class="carousel-dot" data-scenario-target="0" aria-label="Show High Intent scenario" aria-controls="scenario-high" aria-pressed="true"><span aria-hidden="true"></span></button>
+                <button type="button" class="carousel-dot" data-scenario-target="1" aria-label="Show Medium Intent scenario" aria-controls="scenario-medium" aria-pressed="false"><span aria-hidden="true"></span></button>
+                <button type="button" class="carousel-dot" data-scenario-target="2" aria-label="Show Low Intent scenario" aria-controls="scenario-low" aria-pressed="false"><span aria-hidden="true"></span></button>
               </div>
-
-              <button type="button" class="chat-cta">
-                Book Strategy Call <span>→</span>
-              </button>
+              <button class="carousel-arrow" id="scenario-next" type="button" aria-label="Next qualification scenario" aria-controls="qualification-track"><span aria-hidden="true">&rarr;</span></button>
             </div>
-
-            <div class="chat-input">
-              <span>Ask about AI systems...</span>
-              <button type="button" aria-label="Send message">↑</button>
-            </div>
+            <p class="carousel-status" id="scenario-status" role="status" aria-live="polite" aria-atomic="true">01 / 03 &mdash; High Intent</p>
+            <div class="floating-card floating-webhook" aria-hidden="true"><span class="mini-icon purple">&#9889;</span><div><strong>n8n Webhook</strong><small>Illustrative event routing</small></div></div>
           </div>
         </div>
       </div>
-
-      <div class="hero-scroll-hint">
-        <span></span>
-        Explore the system
-      </div>
     </section>
 
-    <!-- PROJECT OVERVIEW -->
-    <section class="section section-dark">
-      <div class="container two-column">
-        <div class="section-copy reveal">
-          <div class="section-kicker">PROJECT OVERVIEW</div>
-
-          <h2>
-            From Website Conversation to
-            <span class="text-cyan">Qualified Sales Opportunity</span>
-          </h2>
-
-          <p>
-            Instead of acting like a basic chatbot, this system behaves like an AI sales consultant.
-            It asks smart qualification questions, understands the visitor’s business, recommends
-            relevant AI solutions, evaluates buying intent, and determines when a discovery call
-            should be offered.
-          </p>
-
-          <p>
-            Every meaningful interaction becomes structured data. The platform captures conversation
-            context, lead signals, business information, AI summaries, funnel events, and sales-ready
-            notifications without relying on manual follow-up.
-          </p>
-
-          <div class="overview-note">
-            <span class="note-icon">✦</span>
-            <p>
-              Built as a scalable, CRM-ready foundation for AI-led acquisition, sales qualification,
-              appointment conversion, and future automation workflows.
-            </p>
-          </div>
-        </div>
-
-        <div class="metric-grid reveal delay-1">
-          <article class="metric-card">
-            <span class="metric-icon cyan">✦</span>
-            <strong>AI-Powered</strong>
-            <span>Qualification</span>
-          </article>
-
-          <article class="metric-card">
-            <span class="metric-icon coral">◫</span>
-            <strong>Structured</strong>
-            <span>Lead Profiles</span>
-          </article>
-
-          <article class="metric-card">
-            <span class="metric-icon purple">⚡</span>
-            <strong>Real-Time</strong>
-            <span>Sales Alerts</span>
-          </article>
-
-          <article class="metric-card">
-            <span class="metric-icon blue">⇄</span>
-            <strong>Event-Driven</strong>
-            <span>Automation</span>
-          </article>
-
-          <article class="metric-card">
-            <span class="metric-icon cyan">◌</span>
-            <strong>Persistent</strong>
-            <span>Conversations</span>
-          </article>
-
-          <article class="metric-card">
-            <span class="metric-icon coral">▦</span>
-            <strong>CRM-Ready</strong>
-            <span>Architecture</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GOALS -->
-    <section class="section">
+    <!-- PROBLEM & SOLUTION -->
+    <section class="section section-dark" aria-labelledby="problem-title">
       <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="section-kicker">SYSTEM OBJECTIVES</div>
-          <h2>
-            Built to Turn Interest Into
-            <span class="text-coral">Actionable Sales Intelligence</span>
-          </h2>
-          <p>
-            Every component is designed to remove repetitive qualification work while giving the
-            sales team clearer context and faster visibility.
-          </p>
+        <div class="section-heading reveal">
+          <div class="section-kicker">THE PROBLEM &amp; THE SOLUTION</div>
+          <h2 id="problem-title">From Manual Lead Qualification to <span class="text-cyan">Automated Sales Follow-Up</span></h2>
+          <p>Website inquiries often require manual qualification, repeated questions, and follow-up before a sales team can identify promising opportunities.</p>
+          <p>This project connects an AI chatbot with n8n to capture lead information, summarize conversations, and notify the sales team when meaningful funnel events occur.</p>
         </div>
-
-        <div class="goal-grid">
+        <div class="problem-grid">
           <article class="glass-card goal-card reveal">
-            <div class="feature-icon icon-cyan">✦</div>
-            <h3>Automate Lead Qualification</h3>
-            <p>Use AI-driven questions to identify lead quality before a sales team member steps in.</p>
+            <div class="feature-icon icon-coral" aria-hidden="true">&#9889;</div>
+            <h3>Manual Lead Qualification</h3>
+            <p>Sales teams spend time reviewing inquiries, gathering business details, and identifying which prospects are ready for a conversation.</p>
           </article>
-
           <article class="glass-card goal-card reveal delay-1">
-            <div class="feature-icon icon-coral">▣</div>
-            <h3>Replace Static Contact Forms</h3>
-            <p>Turn generic inquiries into guided conversations that gather richer business context.</p>
-          </article>
-
-          <article class="glass-card goal-card reveal delay-2">
-            <div class="feature-icon icon-purple">⌘</div>
-            <h3>Extract Business Information</h3>
-            <p>Convert natural language responses into structured lead profiles and CRM-ready data.</p>
-          </article>
-
-          <article class="glass-card goal-card reveal">
-            <div class="feature-icon icon-blue">◉</div>
-            <h3>Score Buying Intent</h3>
-            <p>Detect urgency, readiness, pain points, decision signals, and opportunity potential.</p>
-          </article>
-
-          <article class="glass-card goal-card reveal delay-1">
-            <div class="feature-icon icon-coral">↗</div>
-            <h3>Recommend Discovery Calls</h3>
-            <p>Offer the Calendly booking CTA when the AI identifies a qualified sales opportunity.</p>
-          </article>
-
-          <article class="glass-card goal-card reveal delay-2">
-            <div class="feature-icon icon-cyan">⚡</div>
-            <h3>Trigger Sales Notifications</h3>
-            <p>Send real-time Telegram alerts for summaries, offers, booking clicks, and key funnel events.</p>
+            <div class="feature-icon icon-cyan" aria-hidden="true">&#10022;</div>
+            <h3>AI Chatbot + n8n Automation</h3>
+            <p>The chatbot gathers business context, while n8n routes events, retrieves stored lead information, and sends structured notifications through Telegram.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ARCHITECTURE -->
-    <section class="section workflow-section" id="workflow">
-      <div class="workflow-bg-grid"></div>
-
+    <!-- WORKFLOW: process, independent routes, and output evidence -->
+    <section class="section workflow-section" id="workflow" aria-labelledby="workflow-title">
+      <div class="workflow-bg-grid" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-heading centered reveal">
+        <div class="section-heading reveal">
+          <div class="section-kicker">FROM CONVERSATION TO SALES CONTEXT</div>
+          <h2 id="workflow-title">How the AI Chatbot &amp; <span class="text-cyan">n8n Automation Works</span></h2>
+          <p>A connected workflow that turns chatbot conversations into structured lead information and real-time sales notifications.</p>
+        </div>
+        <ol class="process-grid" aria-label="Four-step automation process">
+          <li class="glass-card process-step reveal">
+            <div class="step-heading"><span class="feature-icon icon-cyan" aria-hidden="true">&#10022;</span><span class="step-number">01</span></div>
+            <h3>AI Chatbot Qualification</h3><p>Context-aware questions capture the visitor&#8217;s business, challenges, tools, goals, and qualification signals.</p>
+          </li>
+          <li class="glass-card process-step reveal delay-1">
+            <div class="step-heading"><span class="feature-icon icon-cyan" aria-hidden="true">&#10022;</span><span class="step-number">02</span></div>
+            <h3>Supabase Data Storage</h3><p>Lead profiles, session information, and conversation context are stored for later retrieval.</p>
+          </li>
+          <li class="glass-card process-step reveal">
+            <div class="step-heading"><span class="feature-icon icon-coral" aria-hidden="true">&#9889;</span><span class="step-number">03</span></div>
+            <h3>n8n Event Routing</h3><p>A webhook receives the event. A Switch node selects a branch and retrieves lead, profile, and session data.</p>
+          </li>
+          <li class="glass-card process-step reveal delay-1">
+            <div class="step-heading"><span class="feature-icon icon-cyan" aria-hidden="true">&#10022;</span><span class="step-number">04</span></div>
+            <h3>Telegram Sales Notifications</h3><p>Structured alerts give the sales team conversation context and visibility into booking-related intent.</p>
+          </li>
+        </ol>
+
+        <!-- Original System Architecture, restored from Git. -->
+        <div class="workflow-subheading reveal">
           <div class="section-kicker">SYSTEM ARCHITECTURE</div>
-
-          <h2>
-            End-to-End
-            <span class="text-cyan">AI Qualification Workflow</span>
-          </h2>
-
-          <p>
-            A connected, event-driven architecture that turns website conversations into structured
-            intelligence, sales notifications, and booking opportunities.
-          </p>
+          <h3>End-to-End <span class="text-cyan">AI Qualification Workflow</span></h3>
         </div>
-
         <div class="workflow-map reveal" id="architecture">
           <div class="workflow-lane">
             <div class="architecture-node node-visitor">
@@ -508,526 +436,93 @@
             </div>
           </div>
         </div>
+
+        <div class="workflow-subheading reveal">
+          <div class="section-kicker">WEBHOOK &rarr; SWITCH &rarr; SUPABASE &rarr; TELEGRAM</div>
+          <h3>Three Events. <span class="text-coral">One Automated Workflow.</span></h3>
+          <p>The webhook and Switch node route each event independently to its matching notification branch.</p>
+        </div>
+        <div class="event-grid">
+          <article class="glass-card event-card reveal"><span class="event-index" aria-hidden="true">&#8599; / 01</span><h4>Conversation Summary Ready</h4><code>conversation_summary_ready</code><p>Retrieves lead context and sends a Telegram notification when a conversation summary is ready.</p></article>
+          <article class="glass-card event-card reveal delay-1"><span class="event-index" aria-hidden="true">&#8599; / 02</span><h4>Booking Offered</h4><code>booking_offered</code><p>Routes the discovery-call recommendation event to a booking-offer notification.</p></article>
+          <article class="glass-card event-card reveal delay-1"><span class="event-index" aria-hidden="true">&#8599; / 03</span><h4>Booking Clicked</h4><code>booking_clicked</code><p>Sends a booking-intent notification when the visitor clicks the booking CTA.</p></article>
+        </div>
+        <p class="event-note reveal">A booking click signals intent; it does not confirm a completed appointment.</p>
+        <div class="workflow-subheading reveal">
+          <div class="section-kicker">THE AUTOMATION IN ACTION</div>
+          <h3>Real Automation Outputs</h3>
+          <p>Examples of the Telegram notifications generated for conversation summaries, booking offers, and booking-link clicks.</p>
+        </div>
+        <div class="output-grid">
+          <div class="reveal">
+            <button type="button" class="evidence-shot image-trigger" data-image="images/tg_convo_summary.png" data-title="Conversation Summary" aria-label="Enlarge Conversation Summary">
+              <img src="images/tg_convo_summary.png" alt="Conversation Summary" width="923" height="1018" loading="lazy" decoding="async" />
+              <span class="shot-caption"><span>Conversation Summary</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button></div>
+          <div class="reveal delay-1">
+            <button type="button" class="evidence-shot image-trigger" data-image="images/tg_booking_offered.png" data-title="Booking Offered" aria-label="Enlarge Booking Offered">
+              <img src="images/tg_booking_offered.png" alt="Booking Offered" width="855" height="1012" loading="lazy" decoding="async" />
+              <span class="shot-caption"><span>Booking Offered</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button></div>
+          <div class="reveal delay-2">
+            <button type="button" class="evidence-shot image-trigger" data-image="images/tg_booking_link_clicked.png" data-title="Booking Link Clicked" aria-label="Enlarge Booking Link Clicked">
+              <img src="images/tg_booking_link_clicked.png" alt="Booking Link Clicked" width="687" height="985" loading="lazy" decoding="async" />
+              <span class="shot-caption"><span>Booking Link Clicked</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button></div>
+        </div>
+        <details class="technical-details glass-card">
+          <summary>View Technical Details <span aria-hidden="true">+</span></summary>
+          <div class="technical-content">
+            <p>Supporting project captures: stored lead-profile records and the Calendly scheduling interface. The workflow canvas shows Supabase retrieval and Telegram delivery; scheduling is presented separately.</p>
+            <p class="table-list"><strong>Visible database tables:</strong> <code>leads</code>, <code>lead_profiles</code>, <code>chat_sessions</code>, <code>chat_messages</code>, <code>scoring_signals</code>, <code>funnel_events</code>, <code>booking_events</code>, <code>tenants</code>.</p>
+            <div class="technical-grid">
+
+            <button type="button" class="evidence-shot image-trigger" data-image="images/supabase_records.png" data-title="Supabase Lead Profile Records" aria-label="Enlarge Supabase Lead Profile Records">
+              <img src="images/supabase_records.png" alt="Supabase Lead Profile Records" width="1005" height="816" loading="lazy" decoding="async" />
+              <span class="shot-caption"><span>Supabase Lead Profile Records</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button>
+
+            <button type="button" class="evidence-shot image-trigger" data-image="images/calendly_calendar.png" data-title="Calendly Scheduling Interface" aria-label="Enlarge Calendly Scheduling Interface">
+              <img src="images/calendly_calendar.png" alt="Calendly Scheduling Interface" width="1380" height="914" loading="lazy" decoding="async" />
+              <span class="shot-caption"><span>Calendly Scheduling Interface</span><span class="shot-expand" aria-hidden="true">&#10530;</span></span>
+            </button>
+            </div>
+          </div>
+        </details>
       </div>
     </section>
 
-    <!-- SYSTEM SCREENSHOTS -->
-
-
-    <!-- STEP BY STEP JOURNEY -->
-    <section class="section timeline-section">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="section-kicker">AUTOMATION JOURNEY</div>
-          <h2>
-            Step-by-Step
-            <span class="text-cyan">Automation Journey</span>
-          </h2>
-          <p>
-            From the first visitor interaction to final booking-intent notifications and sales follow-up.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker">01</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">ENTRY POINT</span>
-                <h3>Visitor Opens the Website</h3>
-                <p>
-                  The visitor lands on the redesigned TechQuarters AI website and opens the floating
-                  AI chatbot through a Start Chat button or chatbot launcher.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/1.png"
-                data-title="Step 01 — Main Landing Page"
-              >
-                <img src="images/1.png" alt="Main TechQuarters landing page screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Main UI</span>
-                <span class="image-fallback">images/1.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal delay-1">
-            <div class="timeline-marker">02</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">QUALIFICATION</span>
-                <h3>AI Qualification Conversation</h3>
-                <p>
-                  The AI asks intelligent questions about business/company, industry, biggest problem,
-                  current workflow, CRM/tools, traffic source, timeline, goals, and optional budget.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/2.png"
-                data-title="Step 02 — AI Qualification Conversation"
-              >
-                <img src="images/2.png" alt="AI qualification conversation screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Chat</span>
-                <span class="image-fallback">images/2.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker">03</div>
-
-            <div class="timeline-card">
-              <span class="timeline-tag">LLM OUTPUT</span>
-              <h3>AI Response Generation</h3>
-              <p>
-                The LLM generates a natural language reply, lead profile, buying signals,
-                conversation summary, recommended next action, and qualification stage.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal delay-1">
-            <div class="timeline-marker">04</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">DATABASE</span>
-                <h3>Data Saved to Supabase</h3>
-                <p>
-                  The system stores the lead, chat session, messages, lead profile, AI summary,
-                  buying intent, scoring signals, and funnel events.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/3.png"
-                data-title="Step 04 — Supabase Data Storage"
-              >
-                <img src="images/3.png" alt="Supabase database screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Database</span>
-                <span class="image-fallback">images/3.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker">05</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">EVENT CREATED</span>
-                <h3>Conversation Summary Trigger</h3>
-                <p>
-                  Once enough details are collected, the AI creates a complete business summary and
-                  triggers <code>conversation_summary_ready</code>.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/4.png"
-                data-title="Step 05 — Telegram Conversation Summary Alert"
-              >
-                <img src="images/4.png" alt="Telegram summary alert screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Rule 1</span>
-                <span class="image-fallback">images/4.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal delay-1">
-            <div class="timeline-marker">06</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">N8N AUTOMATION</span>
-                <h3>n8n Automation</h3>
-                <p>
-                  n8n receives the event through a webhook, retrieves the lead, profile, and session
-                  details, then sends a formatted Telegram summary to the sales team.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/4.png"
-                data-title="Step 06 — n8n Telegram Summary Alert"
-              >
-                <img src="images/4.png" alt="Telegram summary alert screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Alert</span>
-                <span class="image-fallback">images/4.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker">07</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">CONVERSION SIGNAL</span>
-                <h3>Booking Recommendation</h3>
-                <p>
-                  When the AI determines the lead is highly qualified, it recommends a discovery call
-                  and creates <code>booking_offered</code>. The CTA appears in the chat experience.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/5.png"
-                data-title="Step 07 — Telegram Booking Offered Alert"
-              >
-                <img src="images/5.png" alt="Telegram booking offered alert screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Rule 2</span>
-                <span class="image-fallback">images/5.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal delay-1">
-            <div class="timeline-marker">08</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">FINAL ALERT</span>
-                <h3>Booking Click Tracking</h3>
-                <p>
-                  When the visitor clicks “Book a Strategy Call,” the system creates
-                  <code>booking_clicked</code>. n8n sends the final Telegram alert and opens Calendly.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/6.png"
-                data-title="Step 08 — Telegram Booking Clicked Alert"
-              >
-                <img src="images/6.png" alt="Telegram booking clicked alert screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Rule 3</span>
-                <span class="image-fallback">images/6.png</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker">09</div>
-
-            <div class="timeline-card timeline-card-with-image">
-              <div class="timeline-copy">
-                <span class="timeline-tag">CALENDLY BOOKING</span>
-                <h3>Discovery Call Booking Flow</h3>
-                <p>
-                  The high-intent visitor is redirected to Calendly, selects a preferred schedule,
-                  and moves from qualification to a confirmed business conversation.
-                </p>
-              </div>
-
-              <button
-                class="timeline-image image-trigger"
-                data-image="images/7.png"
-                data-title="Step 09 — Calendly Discovery Call Calendar"
-              >
-                <img src="images/7.png" alt="Calendly booking calendar screenshot" onerror="this.classList.add('is-missing')" />
-                <span class="timeline-image-label">View Calendly</span>
-                <span class="image-fallback">images/7.png</span>
-              </button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- N8N -->
-<section class="section n8n-section">
-  <div class="container">
-    <div class="section-heading reveal">
-      <div class="section-kicker">N8N EVENT ROUTING</div>
-      <h2>
-        Event-Driven
-        <span class="text-coral">n8n Automation</span>
-      </h2>
-      <p>
-        The workflow listens for high-value funnel events, retrieves the latest lead context from
-        Supabase, and sends real-time Telegram notifications for faster sales follow-up.
-      </p>
-    </div>
-
-    <button
-      class="n8n-workflow-showcase image-trigger reveal"
-      data-image="images/main.png"
-      data-title="Event-Driven n8n Automation Workflow"
-      aria-label="Open Event-Driven n8n Automation Workflow screenshot"
-    >
-      <span class="n8n-workflow-label">LIVE AUTOMATION CANVAS • MAIN WORKFLOW</span>
-      <span class="n8n-workflow-expand">⤢</span>
-
-      <img
-        src="images/main.png"
-        alt="Event-Driven n8n Automation workflow screenshot"
-        onerror="this.classList.add('is-missing')"
-      />
-
-      <span class="image-fallback">
-        Upload <strong>images/main.png</strong><br />
-        Main n8n event-driven automation workflow screenshot
-      </span>
-    </button>
-
-    <div class="n8n-workflow-caption reveal delay-1">
-      <span class="caption-status"><i></i> Automation Active</span>
-      <p>
-        One centralized workflow handles conversation summaries, booking offers, and booking-click
-        events—giving the sales team complete lead context exactly when action is needed.
-      </p>
-    </div>
-  </div>
-</section>
-
-    <!-- FEATURES -->
-    <section class="section" id="features">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="section-kicker">CORE CAPABILITIES</div>
-          <h2>
-            Designed for
-            <span class="text-cyan">Smarter Sales Operations</span>
-          </h2>
-          <p>
-            A reusable AI systems foundation built for qualification, visibility, conversion, and scale.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="glass-card feature-card reveal"><span>✦</span><h3>AI Lead Qualification</h3><p>Guides prospects through intelligent, context-aware discovery questions.</p></article>
-          <article class="glass-card feature-card reveal delay-1"><span>≋</span><h3>AI Conversation Summary</h3><p>Condenses each conversation into a clear sales-ready business summary.</p></article>
-          <article class="glass-card feature-card reveal delay-2"><span>⌘</span><h3>Lead Profile Extraction</h3><p>Transforms messages into structured company, workflow, and goal data.</p></article>
-          <article class="glass-card feature-card reveal"><span>◉</span><h3>AI Lead Scoring</h3><p>Measures buying intent, urgency, fit, pain points, and readiness.</p></article>
-          <article class="glass-card feature-card reveal delay-1"><span>↗</span><h3>Discovery Call Recommendation</h3><p>Offers a strategic next step when qualification signals are strong.</p></article>
-          <article class="glass-card feature-card reveal delay-2"><span>◷</span><h3>Calendly Integration</h3><p>Connects high-intent visitors with a frictionless booking flow.</p></article>
-          <article class="glass-card feature-card reveal"><span>◌</span><h3>Persistent Chat Sessions</h3><p>Preserves conversation history and context across the customer journey.</p></article>
-          <article class="glass-card feature-card reveal delay-1"><span>⚡</span><h3>Real-Time Automation</h3><p>Triggers responsive workflows from every meaningful funnel event.</p></article>
-          <article class="glass-card feature-card reveal delay-2"><span>✈</span><h3>Telegram Notifications</h3><p>Delivers immediate, readable lead alerts directly to the sales team.</p></article>
-          <article class="glass-card feature-card reveal"><span>▦</span><h3>CRM-Ready Database</h3><p>Stores data in an extensible architecture built for future pipelines.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECH STACK -->
-    <section class="section stack-section" id="stack">
+    <!-- TECHNOLOGY STACK -->
+    <section class="section stack-section" id="stack" aria-labelledby="stack-title">
       <div class="container">
         <div class="section-heading reveal">
-          <div class="section-kicker">TECHNOLOGY STACK</div>
-          <h2>
-            Modern Tools.
-            <span class="text-coral">Connected Systems.</span>
-          </h2>
-          <p>
-            A practical stack selected for fast development, reliable integrations, clear data flow,
-            and long-term extensibility.
-          </p>
+          <div class="section-kicker">CONNECTED TOOLS. CLEAR RESPONSIBILITIES.</div>
+          <h2 id="stack-title">The Technology <span class="text-coral">Behind the Automation</span></h2>
+          <p>A connected stack combining AI, workflow automation, persistent data, and real-time notifications.</p>
         </div>
-
         <div class="stack-grid">
-          <article class="stack-category reveal">
-            <div class="stack-title"><span class="stack-icon cyan">◫</span><h3>Frontend</h3></div>
-            <div class="stack-items">
-              <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span>
-              <span>Glassmorphism UI</span><span>Responsive Design</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal delay-1">
-            <div class="stack-title"><span class="stack-icon coral">⌘</span><h3>Backend</h3></div>
-            <div class="stack-items">
-              <span>Node.js</span><span>Express.js</span><span>REST API</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal delay-2">
-            <div class="stack-title"><span class="stack-icon purple">◆</span><h3>Database</h3></div>
-            <div class="stack-items">
-              <span>Supabase</span><span>PostgreSQL</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal">
-            <div class="stack-title"><span class="stack-icon blue">▦</span><h3>Database Tables</h3></div>
-            <div class="stack-items mono-items">
-              <span>tenants</span><span>leads</span><span>lead_profiles</span><span>chat_sessions</span>
-              <span>chat_messages</span><span>scoring_signals</span><span>funnel_events</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal delay-1">
-            <div class="stack-title"><span class="stack-icon cyan">✦</span><h3>AI Layer</h3></div>
-            <div class="stack-items">
-              <span>OpenAI API</span><span>Groq API</span><span>Claude-Ready Architecture</span>
-              <span>Prompt Engineering</span><span>Structured JSON Outputs</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal delay-2">
-            <div class="stack-title"><span class="stack-icon coral">⚡</span><h3>Automation</h3></div>
-            <div class="stack-items">
-              <span>n8n</span><span>Webhooks</span><span>Switch Nodes</span>
-              <span>Telegram Bot API</span><span>Real-Time Notifications</span>
-            </div>
-          </article>
-
-          <article class="stack-category reveal">
-            <div class="stack-title"><span class="stack-icon purple">◷</span><h3>Scheduling</h3></div>
-            <div class="stack-items"><span>Calendly</span></div>
-          </article>
-
-          <article class="stack-category reveal delay-1">
-            <div class="stack-title"><span class="stack-icon blue">⌁</span><h3>Development</h3></div>
-            <div class="stack-items"><span>VS Code</span><span>Git</span><span>npm</span><span>dotenv</span></div>
-          </article>
+          <article class="stack-category reveal"><div class="stack-title"><span class="stack-icon cyan" aria-hidden="true">&#10022;</span><h3>AI Chatbot</h3></div><p class="stack-tools">OpenAI / Groq APIs</p><p class="stack-context">AI providers documented for the chatbot application.</p></article>
+          <article class="stack-category reveal delay-1"><div class="stack-title"><span class="stack-icon coral" aria-hidden="true">&#9889;</span><h3>Workflow Automation</h3></div><p class="stack-tools">n8n &middot; Webhooks &middot; Switch Routing</p><p class="stack-context">Event branches and context retrieval shown in the workflow.</p></article>
+          <article class="stack-category reveal"><div class="stack-title"><span class="stack-icon cyan" aria-hidden="true">&#10022;</span><h3>Database</h3></div><p class="stack-tools">Supabase &middot; PostgreSQL</p><p class="stack-context">Lead profiles, sessions, and conversation data.</p></article>
+          <article class="stack-category reveal delay-1"><div class="stack-title"><span class="stack-icon coral" aria-hidden="true">&#9889;</span><h3>Notifications</h3></div><p class="stack-tools">Telegram Bot API</p><p class="stack-context">Summary, booking-offer, and booking-click alerts.</p></article>
+          <article class="stack-category reveal"><div class="stack-title"><span class="stack-icon cyan" aria-hidden="true">&#10022;</span><h3>Scheduling</h3></div><p class="stack-tools">Calendly</p><p class="stack-context">Scheduling interface shown in the project evidence.</p></article>
+          <article class="stack-category reveal delay-1"><div class="stack-title"><span class="stack-icon coral" aria-hidden="true">&#9889;</span><h3>Application Development</h3></div><p class="stack-tools">React &middot; TypeScript &middot; Node.js &middot; REST APIs</p><p class="stack-context">Documented stack of the underlying application; source is outside this static showcase.</p></article>
         </div>
-      </div>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section class="section highlights-section">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <div class="section-kicker">PORTFOLIO HIGHLIGHTS</div>
-          <h2>
-            What This Project
-            <span class="text-cyan">Demonstrates</span>
-          </h2>
-          <p>
-            A full-stack AI automation project combining frontend experience, backend logic,
-            structured data, integrations, and business-focused outcomes.
-          </p>
-        </div>
-
-        <div class="highlight-cloud reveal">
-          <span>AI-powered lead qualification systems</span>
-          <span>AI chatbot development</span>
-          <span>LLM prompt engineering</span>
-          <span>Structured AI JSON outputs</span>
-          <span>AI conversation memory</span>
-          <span>Business profile extraction</span>
-          <span>Lead scoring systems</span>
-          <span>CRM-style data architecture</span>
-          <span>Supabase database design</span>
-          <span>Express.js API development</span>
-          <span>React + TypeScript applications</span>
-          <span>REST API integration</span>
-          <span>n8n workflow automation</span>
-          <span>Webhook integrations</span>
-          <span>Telegram Bot automation</span>
-          <span>Calendly integration</span>
-          <span>Event-driven system architecture</span>
-          <span>Full-stack AI application development</span>
-          <span>Modern SaaS UI/UX</span>
-          <span>End-to-end business automation</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ALIGNMENT -->
-    <section class="section alignment-section">
-      <div class="alignment-orb alignment-one"></div>
-      <div class="alignment-orb alignment-two"></div>
-
-      <div class="container alignment-card reveal">
-        <div class="alignment-content">
-          <div class="section-kicker">TECHQUARTERS AI CHALLENGE</div>
-
-          <h2>
-            Built for the
-            <span class="text-coral">TechQuarters AI Challenge</span>
-          </h2>
-
-          <p>
-            This project demonstrates how AI systems, backend workflows, and premium SaaS interfaces
-            can work together to turn conversations into actionable opportunities.
-          </p>
-
-          <div class="alignment-list">
-            <span>✓ AI systems that reduce manual lead qualification</span>
-            <span>✓ Connected chatbot, backend, Supabase, n8n, Telegram, and Calendly APIs</span>
-            <span>✓ Outcome-driven automation workflows</span>
-            <span>✓ Modern responsive SaaS UI/UX</span>
-            <span>✓ Reusable and scalable components</span>
-            <span>✓ Structured CRM-ready data architecture</span>
-            <span>✓ Production-oriented event design</span>
-            <span>✓ Expandable for CRM, analytics, sales, and marketing workflows</span>
-          </div>
-
-          <a
-            href="https://calendar.app.google/RQwQhaRL65RpPxYm9"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-primary"
-          >
-            Let’s Build Intelligent Systems <span>↗</span>
-          </a>
-        </div>
-
-        <div class="alignment-visual">
-          <div class="alignment-ring ring-one"></div>
-          <div class="alignment-ring ring-two"></div>
-
-          <div class="alignment-core">
-            <img src="images/tqlogo.png" alt="Axell Gaceta logo" />
-            <span>AI<br />SYSTEMS</span>
-          </div>
-
-          <div class="orbit-label orbit-one">AUTOMATION</div>
-          <div class="orbit-label orbit-two">DATA</div>
-          <div class="orbit-label orbit-three">AI</div>
-          <div class="orbit-label orbit-four">UX</div>
-        </div>
+        <p class="stack-footnote">This portfolio is built with HTML, CSS, and vanilla JavaScript. Application technologies above describe the showcased system.</p>
       </div>
     </section>
 
     <!-- FINAL CTA -->
-    <section class="section final-cta-section">
+    <section class="section final-cta-section" id="contact" aria-labelledby="contact-title">
       <div class="container final-cta reveal">
-        <div class="cta-glow cta-glow-one"></div>
-        <div class="cta-glow cta-glow-two"></div>
-
-        <div class="section-kicker">READY TO AUTOMATE?</div>
-
-        <h2>
-          Turn Every Website Visitor Into a
-          <span class="text-coral">Qualified Opportunity.</span>
-        </h2>
-
-        <p>
-          Let’s build AI-powered systems that qualify leads, automate workflows,
-          and help your business scale without adding more manual work.
-        </p>
-
+        <div class="cta-glow cta-glow-one" aria-hidden="true"></div>
+        <div class="cta-glow cta-glow-two" aria-hidden="true"></div>
+        <div class="section-kicker">LET&#8217;S BUILD SOMETHING USEFUL</div>
+        <h2 id="contact-title">Interested in Building <span class="text-coral">Smarter Automations?</span></h2>
+        <p>I build AI chatbots, workflow automations, and connected systems that help businesses reduce repetitive work and improve operations.</p>
         <div class="hero-actions">
-          <a
-            href="https://calendar.app.google/RQwQhaRL65RpPxYm9"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-primary"
-          >
-            Book Discovery Call <span>↗</span>
-          </a>
-
-          <a
-            href="https://axell-builds.lovable.app/#home"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-outline"
-          >
-            View Portfolio <span>↗</span>
-          </a>
+          <a href="https://axell-builds.lovable.app/" target="_blank" rel="noopener noreferrer" class="button button-primary">View More Projects <span aria-hidden="true">&#8599;</span></a>
+          <a href="mailto:gacetaaxell@gmail.com" class="button button-outline">Contact Me <span aria-hidden="true">&#8599;</span></a>
         </div>
       </div>
     </section>
@@ -1038,38 +533,28 @@
     <div class="footer-glow footer-glow-one"></div>
     <div class="footer-glow footer-glow-two"></div>
 
-    <div class="container footer-content">
+    <div class="container footer-content reveal">
       <div class="footer-logo-wrap">
         <div class="footer-logo-glow"></div>
-        <img src="images/logo.png" alt="Axell Gaceta logo" class="footer-logo" />
+        <img src="images/logo.png" alt="Axell Gaceta logo" class="footer-logo" width="72" height="72" loading="lazy" decoding="async" />
       </div>
 
+      <p class="section-kicker footer-eyebrow">AI CHATBOT &amp; N8N AUTOMATION PORTFOLIO</p>
       <h2>Made by <span>Axell Gaceta</span></h2>
       <p class="footer-subtitle">Web Developer <b>•</b> AI Automation Builder</p>
 
       <div class="footer-buttons">
-        <a href="https://axell-builds.lovable.app/#home" target="_blank" rel="noopener noreferrer">
-          <span>💼</span> Portfolio
-        </a>
-
-        <a href="https://calendar.app.google/RQwQhaRL65RpPxYm9" target="_blank" rel="noopener noreferrer">
-          <span>📅</span> Book Discovery Call
-        </a>
-
-        <a href="https://github.com/axellgaceta21/" target="_blank" rel="noopener noreferrer">
-          <span>💻</span> GitHub
-        </a>
-
-        <a href="mailto:gacetaaxell@gmail.com">
-          <span>✉️</span> Email
-        </a>
+        <a href="https://github.com/axellgaceta21" target="_blank" rel="noopener noreferrer"><span class="footer-button-emoji" aria-hidden="true">&#128187;</span> GitHub</a>
+        <a class="footer-primary" href="https://axell-builds.lovable.app/" target="_blank" rel="noopener noreferrer"><span class="footer-button-emoji" aria-hidden="true">&#128640;</span> Portfolio <span aria-hidden="true">&#8599;</span></a>
+        <a href="https://drive.google.com/file/d/1KCkvbanLu4UV6E7QBP6FY8yVaKPkto5I/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span class="footer-button-emoji" aria-hidden="true">&#128196;</span> Resume</a>
+        <a href="https://www.linkedin.com/in/axellgaceta21/" target="_blank" rel="noopener noreferrer"><span class="footer-button-emoji" aria-hidden="true">&#128188;</span> LinkedIn</a>
       </div>
 
       <div class="footer-line"></div>
 
       <p class="copyright">
         © 2026 Axell Gaceta <span>•</span>
-        Engineered with n8n, OpenAI, Google Workspace APIs, and Modern Frontend Stacks
+        AI chatbots &middot; Workflow automation &middot; Connected systems
       </p>
     </div>
   </footer>
@@ -1081,101 +566,365 @@
     aria-hidden="true"
     role="dialog"
     aria-modal="true"
-    aria-label="Expanded project screenshot"
+    aria-labelledby="modalTitle"
+    inert
   >
     <button class="modal-close" id="modalClose" aria-label="Close image viewer">×</button>
 
     <div class="modal-content">
-      <p id="modalTitle">Project Screenshot</p>
-      <img id="modalImage" src="" alt="" />
+      <div class="modal-toolbar">
+        <p id="modalTitle">Project Screenshot</p>
+        <a id="modalOriginal" target="_blank" rel="noopener noreferrer">Open original image <span aria-hidden="true">&#8599;</span></a>
+      </div>
+      <img id="modalImage" alt="" />
     </div>
   </div>
+
+  <!-- One reusable explanation dialog for the illustrative chatbot actions. -->
+  <dialog id="chatbotActionModal" class="chatbot-action-modal" aria-modal="true" aria-labelledby="chatbot-action-title" aria-describedby="chatbot-action-message chatbot-action-disclaimer">
+    <div class="chatbot-action-panel">
+      <div class="chatbot-action-header">
+        <span id="chatbot-action-icon" class="chatbot-action-icon" aria-hidden="true"></span>
+        <div class="chatbot-action-heading"><span class="section-kicker">PORTFOLIO DEMONSTRATION</span><h2 id="chatbot-action-title"></h2></div>
+        <button id="chatbot-action-close" class="chatbot-action-close" type="button" aria-label="Close action explanation">&times;</button>
+      </div>
+      <div class="chatbot-action-body">
+        <p id="chatbot-action-message"></p>
+        <ol id="chatbot-action-flow" class="chatbot-action-flow" aria-label="Illustrated live-system journey"></ol>
+        <p id="chatbot-action-explanation"></p>
+        <p id="chatbot-action-distinction" class="chatbot-action-distinction" hidden></p>
+        <p id="chatbot-action-disclaimer" class="chatbot-action-disclaimer"></p>
+        <section class="chatbot-screenshot-section" aria-labelledby="chatbot-preview-title">
+          <h3 id="chatbot-preview-title" class="section-kicker"></h3>
+          <p id="chatbot-preview-description"></p>
+          <p id="chatbot-preview-helper" class="chatbot-preview-helper" hidden>Scroll inside the preview to explore the full screenshot.</p>
+          <div id="chatbot-screenshot-preview" class="popup-screenshot-preview" tabindex="0" role="region" aria-labelledby="chatbot-preview-title" aria-describedby="chatbot-preview-description">
+            <img id="chatbot-preview-image" alt="" decoding="async" />
+          </div>
+        </section>
+      </div>
+      <div class="chatbot-action-footer"><button id="chatbot-action-confirm" class="button button-primary" type="button">Got It</button></div>
+    </div>
+  </dialog>
 
   <script>
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
     const navbar = document.querySelector(".navbar");
+    const desktopNavigation = window.matchMedia("(min-width: 1021px)");
 
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("active");
-
-      menuToggle.classList.toggle("active");
-      menuToggle.setAttribute("aria-expanded", isOpen);
-      document.body.classList.toggle("menu-open", isOpen);
+    function setMenu(open) {
+      navLinks.classList.toggle("active", open);
+      menuToggle.classList.toggle("active", open);
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      document.body.classList.toggle("menu-open", open);
+    }
+    menuToggle.addEventListener("click", () => setMenu(menuToggle.getAttribute("aria-expanded") !== "true"));
+    navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("click", (event) => {
+      if (!navbar.contains(event.target)) setMenu(false);
     });
-
-    document.querySelectorAll(".nav-links a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-        menuToggle.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("menu-open");
-      });
-    });
-
-    window.addEventListener("scroll", () => {
-      navbar.classList.toggle("scrolled", window.scrollY > 20);
-    });
+    desktopNavigation.addEventListener("change", () => setMenu(false));
+    const updateNavbar = () => navbar.classList.toggle("scrolled", window.scrollY > 20);
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
 
     const revealElements = document.querySelectorAll(".reveal");
-
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            revealObserver.unobserve(entry.target);
+            observer.unobserve(entry.target);
           }
         });
-      },
-      { threshold: 0.12 }
-    );
-
-    revealElements.forEach((element) => revealObserver.observe(element));
+      }, { threshold: 0.12 });
+      revealElements.forEach((element) => revealObserver.observe(element));
+    } else {
+      revealElements.forEach((element) => element.classList.add("visible"));
+    }
 
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
     const modalTitle = document.getElementById("modalTitle");
     const modalClose = document.getElementById("modalClose");
+    const modalOriginal = document.getElementById("modalOriginal");
+    const backgroundRegions = [navbar, document.querySelector("main"), document.querySelector("footer")];
+    let originalTrigger = null;
 
     document.querySelectorAll(".image-trigger").forEach((trigger) => {
       trigger.addEventListener("click", () => {
-        const image = trigger.dataset.image;
-        const title = trigger.dataset.title;
-
-        modalImage.src = image;
-        modalImage.alt = title;
-        modalTitle.textContent = title;
-
+        originalTrigger = trigger;
+        setMenu(false);
+        modalImage.src = trigger.dataset.image;
+        modalImage.alt = trigger.dataset.title;
+        modalTitle.textContent = trigger.dataset.title;
+        modalOriginal.href = trigger.dataset.image;
+        modal.inert = false;
         modal.classList.add("active");
         modal.setAttribute("aria-hidden", "false");
         document.body.classList.add("modal-open");
+        backgroundRegions.forEach((region) => { region.inert = true; });
+        modalClose.focus({ preventScroll: true });
       });
     });
 
     function closeModal() {
+      if (!modal.classList.contains("active")) return;
       modal.classList.remove("active");
-      modal.setAttribute("aria-hidden", "true");
-      modalImage.src = "";
       document.body.classList.remove("modal-open");
+      backgroundRegions.forEach((region) => { region.inert = false; });
+      originalTrigger?.focus({ preventScroll: true });
+      modal.setAttribute("aria-hidden", "true");
+      modal.inert = true;
     }
-
     modalClose.addEventListener("click", closeModal);
-
     modal.addEventListener("click", (event) => {
       if (event.target === modal) closeModal();
     });
-
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closeModal();
+      if (modal.classList.contains("active")) {
+        if (event.key === "Escape") { event.preventDefault(); closeModal(); }
+        if (event.key === "Tab") {
+          const first = modalClose;
+          const last = modalOriginal;
+          if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+          else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+        }
+      } else if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+        setMenu(false);
+        menuToggle.focus();
+      }
     });
 
     const cursorGlow = document.querySelector(".cursor-glow");
-
     window.addEventListener("pointermove", (event) => {
-      cursorGlow.style.left = `${event.clientX}px`;
-      cursorGlow.style.top = `${event.clientY}px`;
-    });
+      cursorGlow.style.left = event.clientX + "px";
+      cursorGlow.style.top = event.clientY + "px";
+    }, { passive: true });
+
+    // Manual-only scenario carousel: native touch scrolling, keyboard, and controls.
+    (() => {
+      const carousel = document.querySelector(".chatbot-carousel");
+      if (!carousel) return;
+      const track = document.getElementById("qualification-track");
+      const cards = Array.from(track.querySelectorAll(".scenario-card"));
+      const dots = Array.from(carousel.querySelectorAll("[data-scenario-target]"));
+      const previous = document.getElementById("scenario-prev");
+      const next = document.getElementById("scenario-next");
+      const status = document.getElementById("scenario-status");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      let active = 0;
+      let scrollFrame = null;
+
+      function setActive(index) {
+        active = Math.max(0, Math.min(cards.length - 1, index));
+        cards.forEach((card, i) => card.classList.toggle("is-active", i === active));
+        dots.forEach((dot, i) => dot.setAttribute("aria-pressed", String(i === active)));
+        previous.disabled = active === 0;
+        next.disabled = active === cards.length - 1;
+        const label = String(active + 1).padStart(2, "0") + " / 03 - " + cards[active].dataset.intentLabel;
+        if (status.textContent !== label) status.textContent = label;
+      }
+      function goTo(index, animate = true) {
+        setActive(index);
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        track.scrollTo({
+          left: maxScroll * active / (cards.length - 1),
+          behavior: animate && !reducedMotion.matches ? "smooth" : "auto"
+        });
+      }
+      previous.addEventListener("click", () => goTo(active - 1));
+      next.addEventListener("click", () => goTo(active + 1));
+      dots.forEach((dot) => dot.addEventListener("click", () => goTo(Number(dot.dataset.scenarioTarget))));
+      track.addEventListener("keydown", (event) => {
+        if (event.target !== track) return;
+        const targets = { ArrowLeft: active - 1, ArrowRight: active + 1, Home: 0, End: cards.length - 1 };
+        if (!(event.key in targets)) return;
+        event.preventDefault();
+        goTo(targets[event.key]);
+      });
+      track.addEventListener("focusin", (event) => {
+        const card = event.target.closest(".scenario-card");
+        const index = cards.indexOf(card);
+        if (index !== -1) setActive(index);
+      });
+      track.addEventListener("scroll", () => {
+        if (scrollFrame !== null) return;
+        scrollFrame = window.requestAnimationFrame(() => {
+          scrollFrame = null;
+          const maxScroll = track.scrollWidth - track.clientWidth;
+          if (maxScroll > 1) setActive(Math.round(Math.max(0, Math.min(1, track.scrollLeft / maxScroll)) * (cards.length - 1)));
+        });
+      }, { passive: true });
+      if ("ResizeObserver" in window) {
+        const resizeObserver = new ResizeObserver(() => goTo(active, false));
+        resizeObserver.observe(track);
+      } else {
+        window.addEventListener("resize", () => goTo(active, false), { passive: true });
+      }
+      setActive(0);
+    })();
+
+    // ChatbotActionModal: explanatory UI only; no navigation, bookings, or network calls.
+    (() => {
+      const dialog = document.getElementById("chatbotActionModal");
+      const close = document.getElementById("chatbot-action-close");
+      const confirm = document.getElementById("chatbot-action-confirm");
+      const title = document.getElementById("chatbot-action-title");
+      const icon = document.getElementById("chatbot-action-icon");
+      const message = document.getElementById("chatbot-action-message");
+      const explanation = document.getElementById("chatbot-action-explanation");
+      const flow = document.getElementById("chatbot-action-flow");
+      const distinction = document.getElementById("chatbot-action-distinction");
+      const disclaimer = document.getElementById("chatbot-action-disclaimer");
+      const content = {
+      "booking": {
+            "icon": 128197,
+            "title": "Strategy Call Booking",
+            "message": "In the live AI chatbot, clicking this button would open a Calendly booking calendar where the visitor can select their preferred meeting date and time.",
+            "explanation": "The booking_clicked event is captured and sent to n8n. The workflow retrieves the lead's information and conversation context from Supabase, then sends a real-time Telegram notification to the sales team.",
+            "flow": [
+                  "Book Strategy Call Click",
+                  "booking_clicked",
+                  "n8n Webhook",
+                  "Supabase Lead Lookup",
+                  "Telegram Notification"
+            ],
+            "distinction": "booking_clicked represents a CTA click, not a confirmed appointment. Appointment confirmation would require a separate Calendly booking confirmation event or webhook.",
+            "disclaimer": "Portfolio demonstration only. No actual booking or automation is triggered.",
+            "screenshot": {
+                  "src": "images/calendly_calendar.png",
+                  "label": "CALENDLY BOOKING PREVIEW",
+                  "description": "Preview of the scheduling calendar that visitors would see when booking a strategy call.",
+                  "alt": "Calendly strategy call calendar with date and time selection",
+                  "width": 1380,
+                  "height": 914
+            }
+      },
+      "contact": {
+            "icon": 9993,
+            "title": "Contact Form",
+            "message": "In the live chatbot, this button would direct the visitor to the website's contact form, where they can provide additional details about their business and automation requirements.",
+            "explanation": "The additional information would help the team understand the visitor's requirements and continue the qualification process.",
+            "flow": [
+                  "Contact Us",
+                  "Website Contact Form",
+                  "Additional Business Details",
+                  "Sales Team Follow-Up"
+            ],
+            "disclaimer": "Portfolio demonstration only. No contact form is submitted.",
+            "screenshot": {
+                  "src": "images/contact_us.png",
+                  "label": "CONTACT FORM PREVIEW",
+                  "description": "Preview of the contact form where visitors can provide additional business details.",
+                  "alt": "TechQuarters AI contact page with business and automation requirements form",
+                  "width": 1915,
+                  "height": 2516
+            }
+      },
+      "services": {
+            "icon": 129517,
+            "title": "Explore AI Services",
+            "message": "In the live chatbot, this button would direct the visitor to the Services section of the TechQuarters AI website, where they can learn more about the available AI solutions and automation services.",
+            "explanation": "This allows visitors who are still exploring to learn about the company's services without being pressured to book a strategy call.",
+            "flow": [
+                  "Explore Services",
+                  "Main Website",
+                  "Services Section",
+                  "Learn About AI Solutions"
+            ],
+            "disclaimer": "Portfolio demonstration only. No external navigation is performed.",
+            "screenshot": {
+                  "src": "images/services.png",
+                  "label": "SERVICES PAGE PREVIEW",
+                  "description": "Preview of the services page where visitors can explore available AI and automation solutions.",
+                  "alt": "TechQuarters AI services page showing AI automation, AI agents, software, and integration offerings",
+                  "width": 1915,
+                  "height": 4860
+            }
+      }
+};
+      let trigger = null;
+      const popupBody = dialog.querySelector(".chatbot-action-body");
+      const preview = document.getElementById("chatbot-screenshot-preview");
+      const previewImage = document.getElementById("chatbot-preview-image");
+      const previewTitle = document.getElementById("chatbot-preview-title");
+      const previewDescription = document.getElementById("chatbot-preview-description");
+      const previewHelper = document.getElementById("chatbot-preview-helper");
+
+      function updatePreviewOverflow() {
+        if (!dialog.open || !previewImage.complete) return;
+        previewImage.style.opacity = "1";
+        const overflows = previewImage.naturalWidth > 0 && preview.scrollHeight > preview.clientHeight + 1;
+        previewHelper.hidden = !overflows;
+        preview.setAttribute("aria-describedby", overflows ? "chatbot-preview-description chatbot-preview-helper" : "chatbot-preview-description");
+      }
+      previewImage.addEventListener("load", updatePreviewOverflow);
+      if ("ResizeObserver" in window) {
+        const previewObserver = new ResizeObserver(updatePreviewOverflow);
+        previewObserver.observe(preview);
+      } else {
+        window.addEventListener("resize", updatePreviewOverflow, { passive: true });
+      }
+
+
+      document.querySelectorAll("[data-chatbot-action]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const action = content[button.dataset.chatbotAction];
+          if (!action || dialog.open) return;
+          trigger = button;
+          title.textContent = action.title;
+          icon.textContent = String.fromCodePoint(action.icon);
+          message.textContent = action.message;
+          explanation.textContent = action.explanation;
+          disclaimer.textContent = action.disclaimer;
+          distinction.textContent = action.distinction || "";
+          distinction.hidden = !action.distinction;
+          flow.replaceChildren(...action.flow.map((label) => {
+            const item = document.createElement("li");
+            item.textContent = label;
+            return item;
+          }));
+          previewTitle.textContent = action.screenshot.label;
+          previewDescription.textContent = action.screenshot.description;
+          previewHelper.hidden = true;
+          preview.setAttribute("aria-describedby", "chatbot-preview-description");
+          previewImage.style.opacity = "0";
+          previewImage.alt = action.screenshot.alt;
+          previewImage.width = action.screenshot.width;
+          previewImage.height = action.screenshot.height;
+          previewImage.src = action.screenshot.src;
+          dialog.showModal();
+          document.body.classList.add("chatbot-demo-open");
+          dialog.scrollTop = 0;
+          popupBody.scrollTop = 0;
+          preview.scrollTop = 0;
+          window.requestAnimationFrame(updatePreviewOverflow);
+          close.focus({ preventScroll: true });
+        });
+      });
+      const closeDialog = () => { if (dialog.open) dialog.close(); };
+      close.addEventListener("click", closeDialog);
+      confirm.addEventListener("click", closeDialog);
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) closeDialog();
+      });
+      dialog.addEventListener("cancel", (event) => {
+        event.preventDefault();
+        closeDialog();
+      });
+      dialog.addEventListener("close", () => {
+        document.body.classList.remove("chatbot-demo-open");
+        trigger?.focus({ preventScroll: true });
+      });
+      dialog.addEventListener("keydown", (event) => {
+        if (event.key !== "Tab") return;
+        if (event.shiftKey && document.activeElement === close) { event.preventDefault(); confirm.focus(); }
+        else if (!event.shiftKey && document.activeElement === confirm) { event.preventDefault(); close.focus(); }
+      });
+    })();
   </script>
 </body>
 </html>
